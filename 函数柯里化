@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    function curriedSum() {
+      let args = Array.prototype.slice.call(arguments);
+      let sum = function() {
+        args.push(...arguments);
+        return sum;
+      }
+      sum.toString = function() {
+        return args.reduce(function(prev,cur) {
+          return prev + cur;
+        });
+      }
+      return sum;
+    }
+
+
+    alert(curriedSum(1,2,3));
+    alert(curriedSum(1)(2,3));
+    alert(curriedSum(1)(2)(3));
+
+  </script>
+</body>
+
+</html>
