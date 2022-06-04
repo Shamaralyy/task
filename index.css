@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.strong {
+    float: left;
+    margin-top: 0px;
+    font-size: 19px;
+    color: #040404;
+    font-weight: bold;
+}
+
+/* 头部区域 */
+.app {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 106px;
+    background-color: #fbfbfb;
+}
+
+.app .btn {
+    float: right;
+    width: 94px;
+    height: 34px;
+    color: #7f7f7f;
+    margin-right: 17px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 2px #dcdcdc solid;
+    background-color: #fbfbfb;
+}
+
+.app .toggle ul {
+    display: flex;
+    list-style: none;
+}
+
+.app .toggle ul li {
+    flex: 1;
+    height: 50px;
+    line-height: 50px;
+    color: #8e8e8e;
+}
+
+.app .toggle ul .active {
+    color: #21d399;
+    border-bottom: 3px solid #21d399;
+}
+
+/* 尾部区域 */
+.end {
+    height: 180px;
+    margin-top: 240px;
+    text-align: center;
+}
+
+/* 项目1 */
+.content {
+    margin-left: 20px;
+    margin-right: 17px;
+}
+
+.search {
+    margin-top: 123px;
+    width: 337px;
+    height: 34px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.item {
+    display: none;
+    height: 667px;
+    background-color: #f7f7f7;
+}
+
+.recommand ul li {
+    float: left;
+}
+
+.item ul {
+    list-style: none;
+    width: 793px;
+}
+
+
+.item ul li img {
+    width: 123px;
+    height: 123px;
+    margin-right: 9px;
+}
+
+.item ul li p {
+    margin-top: 11px;
+}
+
+.official,
+.tatsujin,
+.column {
+    height: 190px;
+    margin-top: 31px;
+}
+
+.column ul li img {
+    width: 254px;
+    height: 142px;
+}
+
+
+/* 项目2————排行榜 */
+.rank_ul {
+    display: block;
+    margin-top: 130px;
+    width: 340px;
+    height: 600px;
+}
+
+.rank_ul .rank_li {
+    display: block;
+    margin-top: 13px;
+    margin-left: 0px;
+    width: 344px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.rank_ul li .left {
+    float: left;
+    margin-left: 13px;
+    width: 198px;
+    height: 120px;
+}
+
+.rank_ul li img {
+    float: right;
+    width: 115px;
+    height: 115px;
+}
+
+/* 项目3————搜索栏 */
+.hot {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* 项目4————歌曲 */
