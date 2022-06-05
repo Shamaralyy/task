@@ -95,7 +95,7 @@ let input = document.querySelectorAll(".search")[1];
 let list = document.querySelector(".list");
 let history = document.querySelector(".history");
 let list_content = document.querySelector(".list_content");
-
+let new_div = document.createElement('div');
 
 input.addEventListener('keypress', function () {
     console.log(input.value);
@@ -103,6 +103,7 @@ input.addEventListener('keypress', function () {
     new_history.innerHTML += `<span class="hot" style="margin:10px">${input.value}</span>`;
     history.appendChild(new_history);
 
+    new_div.innerHTML = '';
     fetch('http://124.221.249.219:8000/api/search?keyword=' + input.value)
         .then((res) => res.json())
         .then((data) => {
