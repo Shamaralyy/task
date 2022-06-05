@@ -71,6 +71,7 @@ input:focus {
 .content {
     margin-left: 20px;
     margin-right: 17px;
+    overflow: scroll;
 }
 
 .search {
