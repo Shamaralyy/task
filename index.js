@@ -62,8 +62,6 @@ fetch('http://124.221.249.219:8000/api/recommendations')
         }
     });
 
-
-
 let rank_ul = document.querySelector(".rank_ul");
 
 fetch('http://124.221.249.219:8000/api/ranking')
